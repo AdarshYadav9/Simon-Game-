@@ -1,0 +1,83 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size:3.5em;
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 196%;
+    margin-top: 1.2rem;
+}
+/*  */
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20% ;
+    border: 10px solid black;
+    margin: 2.5rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    background-color: #d95980;
+}
+.yellow {
+    background-color: #f99b45;
+}
+.green {
+    background-color: #63aac0;
+}
+.purple {
+    background-color: #881ff9;
+}
+.flash {
+    background-color: white;
+}
+
+.userflash {
+    background-color: green;
+}
+
+/* reset */
+.resetbtn-button {
+    min-width: 110px;
+    height: 69px;
+    border-radius: 40px;
+    background: #262222;
+    padding: 10px 35px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -0.1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+    position: relative;
+  }
+  
+  /* Hover */
+  .resetbtn-button:hover {
+    background-color: #b41414;
+  }
+  
+  /* Active (on click/press) */
+  .resetbtn-button:active {
+    transform: scale(0.96);
+    background-color: #a90f0f;
+  }
+  
+  /* Focus (keyboard navigation) */
+  .resetbtn-button:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 4px;
+  }
