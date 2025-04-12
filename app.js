@@ -1,13 +1,11 @@
 let gameSeq = [] ;
 let userSeq = [] ;
 let highscore = localStorage.getItem("highscore") || 0  ; // for local storage (if not ,it default to 0 )
-// let highScore = [] ;
 let btns = ["yellow" , "red", "purple" , "green"];
 let started = false ;
 let level = 0 ;
 
 let scoreText = document.querySelector(".status");
-// let score = document.querySelector(".score");
 
 
 let resetbtn = document.querySelector(".res");
@@ -97,10 +95,17 @@ for(btn of allbtn){
 //   } 
  resetbtn.addEventListener("dblclick",function(e){
     //  reset();
-    if(started=== true ){
+    if(started === true ){
           e.preventDefault();
       reset();
+     
       scoreText.innerText = `Press Enter Keys to Start The Game `;     
+    }else {
+        started = true ;
+       resetbtn.innerText = "Game Reset ! ";
+       setTimeout(function(){
+         levelUP();
+       },350);
     }
    console.log(" RESET BUTTON CLICKED ");
   });
