@@ -10,7 +10,7 @@ let scoreText = document.querySelector(".status");
 
 let resetbtn = document.querySelector(".res");
 let scoreDisplay = document.querySelector(".score");
-scoreDisplay.innerText = `High Score :${highscore}`;  // initial 
+scoreDisplay.innerText = `High Score : ${highscore}`;  // initial 
 
 // keypress
 document.addEventListener("keypress", function (e){
@@ -71,8 +71,7 @@ scoreText.innerHTML = `Game Over! Your Score Was ${level}  <br> Press Enter key 
   reset ();
   }
 }  
-
- 
+// Button press 
 function btnpress(){
  let bttn = this;
  userFlash(bttn);
@@ -90,10 +89,7 @@ for(btn of allbtn){
   let audio = new Audio("game_sound.mp3");
   audio.play();
 }
-// // High Score 
-//   function highscoreMax(highscore){
-//     return Math.max(...highscore);
-//   } 
+// start and reset button 
  resetbtn.addEventListener("dblclick",function(e){
     //  reset();
     if(started === true ){
