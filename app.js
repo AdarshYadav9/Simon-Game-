@@ -99,7 +99,7 @@ for(btn of allbtn){
       scoreText.innerText = `Press Enter Keys to Start The Game `;     
     }else {
         started = true ;
-       resetbtn.innerText = "Game Reset ! ";
+       resetbtn.innerText = "Game Reset  ";
        setTimeout(function(){
          levelUP();
        },350);
