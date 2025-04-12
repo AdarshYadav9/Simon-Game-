@@ -71,7 +71,8 @@ scoreText.innerHTML = `Game Over! Your Score Was ${level}  <br> Press Enter key 
   reset ();
   }
 }  
-// 
+
+ 
 function btnpress(){
  let bttn = this;
  userFlash(bttn);
